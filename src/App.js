@@ -1,14 +1,23 @@
+import GlobalStyles from "./global";
+
 import { Provider as TodosProvider } from "react-redux";
 import store from "./store/store";
 
+import Form from "./components/Form";
+import List from "./components/List";
+
 function App() {
   return (
-    <div className="App">
+    <>
       <GlobalStyles />
       <TodosProvider store={store}>
-        <main></main>
+        <header>Todo List</header>
+        <main>
+          <Form />
+          <List />
+        </main>
       </TodosProvider>
-    </div>
+    </>
   );
 }
 
