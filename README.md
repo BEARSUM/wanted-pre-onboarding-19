@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# wanted-pre-onboarding-frontend-challenge-19
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 안내사항
 
-## Available Scripts
+과제 세팅에 맞춰 과제를 수행해주세요. 세팅값에 맞지 않는 프로젝트는 과제 확인이 불가능합니다. 과제 제출 전에 확인하고 제출 부탁드립니다.
 
-In the project directory, you can run:
+- [ ] 과제 제출 최상단에 개인 이력서 주소 첨부해주세요.
+- [ ] create-react-app 혹은 vite으로 프로젝트를 생성합니다.
+- [ ] 아래 과제 공통 세팅의 폴더 구조를 확인합니다.
+- [ ] 과제를 제출하는 방법은 본인이 작업한 github repository 주소를 [issues](https://github.com/summerdidi/wanted-pre-onboarding-frontend-challenge-19/issues)에 올리면 됩니다.
+- [ ] 과제물은 main 브랜치에 올립니다.
+- [ ] 프로젝트는 node version 20에서 실행할 수 있어야합니다.
+- [ ] Settings -> Codespaces -> Configuration Select branch를 main 으로 하고 제출합니다.(codespace 확인용도)
+- [ ] 함수형 컴포넌트를 사용해 코드를 짜주세요.
 
-### `npm start`
+## 과제 공통 세팅
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- cra로 과제를 수행하기 위해서는 node.js와 npm이 설치 되어있어야 합니다.
+- 폴더 구조는 가능한 아래 양식을 맞춰주세요.
+- 스타일은 tailwind, styled-component, scss등 자유롭게 설정하시면 됩니다.
+- 아래 폴더와 파일은 필수 요소입니다. 나머지는 자유롭게 설정해주세요.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+/src
+  /components
+    /List
+  /store
+  App.tsx
+  index.tsx
+```
 
-### `npm test`
+## 과제 1 todo list 만들기
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Add와 Delete 기능 2 가지를 만듭니다.
 
-### `npm run build`
+1. input 창에 list1을 입력 후 Add 버튼을 누르면 input 창 하단에 list1 컴포넌트가 뜹니다.
+2. 각 list의 delete 버튼을 누르면 해당 list 컴포넌트가 삭제됩니다.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img src="https://github.com/summerdidi/wanted-pre-onboarding-frontend-challenge-19/blob/main/todoListAssignment.png" width="500" >
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 디자인은 자유롭게 해도 됩니다. 위의 2가지 버튼과 그에 따른 기능이 있으면 됩니다.
+- 가능하면 컴포넌트를 만듭니다. (작은 단위라도 좋습니다.)
+- 전역상태를 관리해주세요.(가능한 Redux나 Redux-toolkit을 이용해주세요.)
